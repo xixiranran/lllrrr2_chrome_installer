@@ -56,22 +56,20 @@ info = {
     },
 }
 
-update_url = 'https://tools.google.com/service/update2'
-
-session = requests.Session()
+update_url = 'http://tools.google.com/service/update2'
 
 
-def post(os: str, app: str) -> str:
-    xml = f'''<?xml version="1.0" encoding="UTF-8"?>
-    <request protocol="3.0" updater="Omaha" updaterversion="1.3.36.372" shell_version="1.3.36.352" ismachine="0" sessionid="{11111111-1111-1111-1111-111111111111}" installsource="taggedmi" requestid="{11111111-1111-1111-1111-111111111111}" dedup="cr" domainjoined="0">
-    <hw physmemory="16" sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1"/>
-    <os {os}/>
-    <app {app}>
+def post(os, app):
+    xml = '''<?xml version="1.0" encoding="UTF-8"?>
+    <request protocol="3.0" version="1.3.23.9" ismachine="0">
+    <hw sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1" physmemory="12582912" />
+    <os {0}/>
+    <app {1}>
     <updatecheck/>
-    <data name="install" index="empty"/>
     </app>
-    </request>'''
-    r = session.post(update_url, data=xml)
+    </request>'''.format(os, app)
+    # print(xml)
+    r= requests.post(update_url, data=xml)
     return r.text
 
 def decode(text):
@@ -111,19 +109,10 @@ def fetch():
     for k, v in info.items():
         res = post(**v)
         data = decode(res)
-        if version_tuple(data['version']) < version_tuple(results[k]['version']):
+        if version_tuple(data['version']) <= version_tuple(results[k]['version']):
             print("ignore", k, data['version'])
             continue
         results[k] = data
-
-suffixes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
-def humansize(nbytes):
-    i = 0
-    while nbytes >= 1024 and i < len(suffixes)-1:
-        nbytes /= 1024.
-        i += 1
-    f = ('%.2f' % nbytes).rstrip('0').rstrip('.')
-    return '%s %s' % (f, suffixes[i])
 
 def save_md():
     with open('readme.md', 'w') as f:
@@ -132,13 +121,13 @@ def save_md():
         f.write('\n')
         for k, v in results.items():
             f.write(f'## {k.replace("_", " ")}\n')
-            f.write(f'**version**:{v["version"]}  \n')
-            f.write(f'**size**:{humansize(v["size"])}  \n')
-            f.write(f'**sha1**:{v["sha1"]}  \n')
-            f.write(f'**sha256**:{v["sha256"]}  \n')
+            f.write(f'version:{v["version"]}  \n')
+            f.write(f'size:{v["size"]}  \n')
+            f.write(f'sha1:{v["sha1"]}  \n')
+            f.write(f'sha256:{v["sha256"]}  \n')
             for url in v["urls"]:
                 if url.startswith("https://dl."):
-                    f.write(f'**download**:[{url}]({url})  \n')
+                    f.write(f'download:[{url}]({url})  \n')
 
             f.write('\n')
 
