@@ -56,7 +56,9 @@ info = {
     },
 }
 
-update_url = 'http://tools.google.com/service/update2'
+update_url = 'https://tools.google.com/service/update2'
+
+session = requests.Session()
 
 
 def post(os: str, app: str) -> str:
@@ -69,7 +71,7 @@ def post(os: str, app: str) -> str:
     <data name="install" index="empty"/>
     </app>
     </request>'''
-    r = requests.post(update_url, data=xml)
+    r = session.post(update_url, data=xml)
     return r.text
 
 def decode(text):
