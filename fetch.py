@@ -7,35 +7,35 @@ from datetime import datetime, timezone
 
 info = {
     "win_stable_x86": {
-        "os": '''platform="win" version="6.3" arch="x86"''',
-        "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" ap="-multi-chrome"''',
+        "os": '''platform="win" version="10.0" sp="" arch="x86"''',
+        "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="" nextversion="" lang="en" brand=""  installage="-1" installdate="-1" iid="{11111111-1111-1111-1111-111111111111}"''',
     },
     "win_stable_x64": {
-        "os": '''platform="win" version="6.3" arch="x64"''',
-        "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" ap="x64-stable-multi-chrome"''',
+        "os": '''platform="win" version="10.0" sp="" arch="x64"''',
+        "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" version="" nextversion="" lang="en" brand=""  installage="-1" installdate="-1" iid="{11111111-1111-1111-1111-111111111111}"''',
     },
     "win_beta_x86": {
-        "os": '''platform="win" version="6.3" arch="x86"''',
+        "os": '''platform="win" version="10.0" arch="x86"''',
         "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" ap="1.1-beta"''',
     },
     "win_beta_x64": {
-        "os": '''platform="win" version="6.3" arch="x64"''',
+        "os": '''platform="win" version="10.0" arch="x64"''',
         "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" ap="x64-beta-multi-chrome"''',
     },
     "win_dev_x86": {
-        "os": '''platform="win" version="6.3" arch="x86"''',
+        "os": '''platform="win" version="10.0" arch="x86"''',
         "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" ap="2.0-dev"''',
     },
     "win_dev_x64": {
-        "os": '''platform="win" version="6.3" arch="x64"''',
+        "os": '''platform="win" version="10.0" arch="x64"''',
         "app": '''appid="{8A69D345-D564-463C-AFF1-A69D9E530F96}" ap="x64-dev-multi-chrome"''',
     },
     "win_canary_x86": {
-        "os": '''platform="win" version="6.3" arch="x86"''',
-        "app": '''appid="{4EA16AC7-FD5A-47C3-875B-DBF4A2008C20}" ap=""''',
+        "os": '''platform="win" version="10.0" arch="x86"''',
+        "app": '''appid="{4EA16AC7-FD5A-47C3-875B-DBF4A2008C20}" ap="x86-canary"''',
     },
     "win_canary_x64": {
-        "os": '''platform="win" version="6.3" arch="x64"''',
+        "os": '''platform="win" version="10.0" arch="x64"''',
         "app": '''appid="{4EA16AC7-FD5A-47C3-875B-DBF4A2008C20}" ap="x64-canary"''',
     },
     "mac_stable": {
@@ -111,10 +111,19 @@ def fetch():
     for k, v in info.items():
         res = post(**v)
         data = decode(res)
-        if version_tuple(data['version']) <= version_tuple(results[k]['version']):
+        if version_tuple(data['version']) < version_tuple(results[k]['version']):
             print("ignore", k, data['version'])
             continue
         results[k] = data
+
+suffixes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
+def humansize(nbytes):
+    i = 0
+    while nbytes >= 1024 and i < len(suffixes)-1:
+        nbytes /= 1024.
+        i += 1
+    f = ('%.2f' % nbytes).rstrip('0').rstrip('.')
+    return '%s %s' % (f, suffixes[i])
 
 def save_md():
     with open('readme.md', 'w') as f:
@@ -123,13 +132,13 @@ def save_md():
         f.write('\n')
         for k, v in results.items():
             f.write(f'## {k.replace("_", " ")}\n')
-            f.write(f'version:{v["version"]}  \n')
-            f.write(f'size:{v["size"]}  \n')
-            f.write(f'sha1:{v["sha1"]}  \n')
-            f.write(f'sha256:{v["sha256"]}  \n')
+            f.write(f'**version**:{v["version"]}  \n')
+            f.write(f'**size**:{humansize(v["size"])}  \n')
+            f.write(f'**sha1**:{v["sha1"]}  \n')
+            f.write(f'**sha256**:{v["sha256"]}  \n')
             for url in v["urls"]:
                 if url.startswith("https://dl."):
-                    f.write(f'download:[{url}]({url})  \n')
+                    f.write(f'**download**:[{url}]({url})  \n')
 
             f.write('\n')
 
