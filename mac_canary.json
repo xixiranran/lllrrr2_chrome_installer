@@ -1,16 +1,14 @@
 {
-    "version": "104.0.5105.0",
-    "size": 201927125,
-    "sha1": "f5bfa5f4d04df0744fefa7a36c09c9bf6240d1f9",
-    "sha256": "c2e865767500fe313726c1e32769d5f75abf8553da35dadf8e1a604aec030a97",
+    "version": "125.0.6392.0",
+    "size": 201299258,
+    "sha1": "4bbaa48845f64e9df1e669457d023d19e2b6a12a",
+    "sha256": "204cc4872648f0eea28b111dd1acb90042736a412fe7eb5a5be56bd689c86254",
     "urls": [
-        "http://edgedl.me.gvt1.com/edgedl/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "http://redirector.gvt1.com/edgedl/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "https://edgedl.me.gvt1.com/edgedl/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "https://redirector.gvt1.com/edgedl/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "http://dl.google.com/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "https://dl.google.com/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "http://www.google.com/dl/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg",
-        "https://www.google.com/dl/release2/chrome/hmspdkzb4ubtsk6cliq67yp7by_104.0.5105.0/GoogleChromeCanary-104.0.5105.0.dmg"
+        "http://edgedl.me.gvt1.com/edgedl/release2/chrome/jpil3whqycmohoyvmsqhvr4ham_125.0.6392.0/GoogleChromeCanary-125.0.6392.0.dmg",
+        "https://edgedl.me.gvt1.com/edgedl/release2/chrome/jpil3whqycmohoyvmsqhvr4ham_125.0.6392.0/GoogleChromeCanary-125.0.6392.0.dmg",
+        "http://dl.google.com/release2/chrome/jpil3whqycmohoyvmsqhvr4ham_125.0.6392.0/GoogleChromeCanary-125.0.6392.0.dmg",
+        "https://dl.google.com/release2/chrome/jpil3whqycmohoyvmsqhvr4ham_125.0.6392.0/GoogleChromeCanary-125.0.6392.0.dmg",
+        "http://www.google.com/dl/release2/chrome/jpil3whqycmohoyvmsqhvr4ham_125.0.6392.0/GoogleChromeCanary-125.0.6392.0.dmg",
+        "https://www.google.com/dl/release2/chrome/jpil3whqycmohoyvmsqhvr4ham_125.0.6392.0/GoogleChromeCanary-125.0.6392.0.dmg"
     ]
 }
