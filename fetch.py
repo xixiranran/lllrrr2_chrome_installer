@@ -69,7 +69,7 @@ def post(os: str, app: str) -> str:
     <data name="install" index="empty"/>
     </app>
     </request>'''
-    r = session.post(update_url, data=xml)
+    r = requests.post(update_url, data=xml)
     return r.text
 
 def decode(text):
