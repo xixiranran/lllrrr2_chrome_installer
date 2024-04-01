@@ -59,17 +59,17 @@ info = {
 update_url = 'http://tools.google.com/service/update2'
 
 
-def post(os, app):
-    xml = '''<?xml version="1.0" encoding="UTF-8"?>
-    <request protocol="3.0" version="1.3.23.9" ismachine="0">
-    <hw sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1" physmemory="12582912" />
-    <os {0}/>
-    <app {1}>
+def post(os: str, app: str) -> str:
+    xml = f'''<?xml version="1.0" encoding="UTF-8"?>
+    <request protocol="3.0" updater="Omaha" updaterversion="1.3.36.372" shell_version="1.3.36.352" ismachine="0" sessionid="{11111111-1111-1111-1111-111111111111}" installsource="taggedmi" requestid="{11111111-1111-1111-1111-111111111111}" dedup="cr" domainjoined="0">
+    <hw physmemory="16" sse="1" sse2="1" sse3="1" ssse3="1" sse41="1" sse42="1" avx="1"/>
+    <os {os}/>
+    <app {app}>
     <updatecheck/>
+    <data name="install" index="empty"/>
     </app>
-    </request>'''.format(os, app)
-    # print(xml)
-    r= requests.post(update_url, data=xml)
+    </request>'''
+    r = session.post(update_url, data=xml)
     return r.text
 
 def decode(text):
