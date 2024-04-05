@@ -1,14 +1,14 @@
 {
-    "version": "123.0.6312.106",
-    "size": 212957662,
-    "sha1": "8a659a249d79970b5796c9a5fd32492e9c5ee829",
-    "sha256": "5b70cb0615be8456193e5c404e791dc8f77ef01c8a7f685578b5ea2608d7209b",
+    "version": "123.0.6312.107",
+    "size": 212935679,
+    "sha1": "8135a0a5c5a49eca5fa048cf4266868bc5da7362",
+    "sha256": "111ed04de26fe092de44dead4b272f591688b8562c88d0a3bf5eea4100d50bb6",
     "urls": [
-        "http://edgedl.me.gvt1.com/edgedl/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg",
-        "https://edgedl.me.gvt1.com/edgedl/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg",
-        "http://dl.google.com/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg",
-        "https://dl.google.com/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg",
-        "http://www.google.com/dl/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg",
-        "https://www.google.com/dl/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg"
+        "http://edgedl.me.gvt1.com/edgedl/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg",
+        "https://edgedl.me.gvt1.com/edgedl/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg",
+        "http://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg",
+        "https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg",
+        "http://www.google.com/dl/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg",
+        "https://www.google.com/dl/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg"
     ]
 }

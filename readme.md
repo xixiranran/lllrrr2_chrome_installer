@@ -1,5 +1,5 @@
 # Automatic Generated Time
-2024-04-04 00:52:38.294712+00:00
+2024-04-05 00:51:55.331854+00:00
 
 ## win stable x86
 version:123.0.6312.106  
@@ -44,44 +44,44 @@ sha256:6be2e5c29d4c8592175a4ef2df227fbb33d177d20cc6a999b58b6dcacd570d4e
 download:[https://dl.google.com/release2/chrome/ad6zggpbnks52atpj2xgdht423pa_125.0.6382.3/125.0.6382.3_chrome_installer.exe](https://dl.google.com/release2/chrome/ad6zggpbnks52atpj2xgdht423pa_125.0.6382.3/125.0.6382.3_chrome_installer.exe)  
 
 ## win canary x86
-version:125.0.6397.0  
-size:101481008  
-sha1:f8984fbbbc0d47a15b761c89d1cdc74f48cd1625  
-sha256:c177f9bb08625cce33faf0d066214acb44996fb80c3b6ec1b06e62abe10f415a  
-download:[https://dl.google.com/release2/chrome/al3txfaambnmsjj5a55xpjlwou_125.0.6397.0/125.0.6397.0_chrome_installer.exe](https://dl.google.com/release2/chrome/al3txfaambnmsjj5a55xpjlwou_125.0.6397.0/125.0.6397.0_chrome_installer.exe)  
+version:125.0.6399.0  
+size:101624368  
+sha1:e34d6d9ed1538eaa166127b7df7d790d2437c404  
+sha256:ff5c7f9583e2edf3429ca9742363ca7878d18363b46310d5b647a977220f6eda  
+download:[https://dl.google.com/release2/chrome/dxdlbec3bwxgdjuo2y4ibhcghi_125.0.6399.0/125.0.6399.0_chrome_installer.exe](https://dl.google.com/release2/chrome/dxdlbec3bwxgdjuo2y4ibhcghi_125.0.6399.0/125.0.6399.0_chrome_installer.exe)  
 
 ## win canary x64
-version:125.0.6397.0  
-size:112496176  
-sha1:5ef45467e5db03cdbc874079a71f55cb493e3565  
-sha256:d21014e4617212893eed0ebffed637c57938e8f25faf1a8ec1a4cfd5ede4c7c4  
-download:[https://dl.google.com/release2/chrome/adpygo4p55ksk76nkqvxdm6wiv5a_125.0.6397.0/125.0.6397.0_chrome_installer.exe](https://dl.google.com/release2/chrome/adpygo4p55ksk76nkqvxdm6wiv5a_125.0.6397.0/125.0.6397.0_chrome_installer.exe)  
+version:125.0.6399.0  
+size:112726576  
+sha1:fb67ca940747644c905241bfbe5bcf0505ff5c26  
+sha256:84e1ea0635090fd323c532762998c81661446d2d48bdb3afab2d4193e73d5989  
+download:[https://dl.google.com/release2/chrome/adaujsotzrapr5arvffuubcnmeva_125.0.6399.0/125.0.6399.0_chrome_installer.exe](https://dl.google.com/release2/chrome/adaujsotzrapr5arvffuubcnmeva_125.0.6399.0/125.0.6399.0_chrome_installer.exe)  
 
 ## mac stable
-version:123.0.6312.105  
-size:212945842  
-sha1:a3a42ce5f1cfb16e77eccdcf652efa2934dbce7e  
-sha256:c02520f6bf2888958951e60e40f234438578cfd7d57854bae483e3f1c4f1df02  
-download:[https://dl.google.com/release2/chrome/k3s2upz263mddrjgdaoyv6d7ga_123.0.6312.105/GoogleChrome-123.0.6312.105.dmg](https://dl.google.com/release2/chrome/k3s2upz263mddrjgdaoyv6d7ga_123.0.6312.105/GoogleChrome-123.0.6312.105.dmg)  
+version:123.0.6312.107  
+size:212935679  
+sha1:8135a0a5c5a49eca5fa048cf4266868bc5da7362  
+sha256:111ed04de26fe092de44dead4b272f591688b8562c88d0a3bf5eea4100d50bb6  
+download:[https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg](https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg)  
 
 ## mac beta
-version:123.0.6312.106  
-size:212957662  
-sha1:8a659a249d79970b5796c9a5fd32492e9c5ee829  
-sha256:5b70cb0615be8456193e5c404e791dc8f77ef01c8a7f685578b5ea2608d7209b  
-download:[https://dl.google.com/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg](https://dl.google.com/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg)  
+version:123.0.6312.107  
+size:212935679  
+sha1:8135a0a5c5a49eca5fa048cf4266868bc5da7362  
+sha256:111ed04de26fe092de44dead4b272f591688b8562c88d0a3bf5eea4100d50bb6  
+download:[https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg](https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg)  
 
 ## mac dev
-version:123.0.6312.106  
-size:212957662  
-sha1:8a659a249d79970b5796c9a5fd32492e9c5ee829  
-sha256:5b70cb0615be8456193e5c404e791dc8f77ef01c8a7f685578b5ea2608d7209b  
-download:[https://dl.google.com/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg](https://dl.google.com/release2/chrome/l5gs53srvucllvjdgxqmn7wsq4_123.0.6312.106/GoogleChrome-123.0.6312.106.dmg)  
+version:123.0.6312.107  
+size:212935679  
+sha1:8135a0a5c5a49eca5fa048cf4266868bc5da7362  
+sha256:111ed04de26fe092de44dead4b272f591688b8562c88d0a3bf5eea4100d50bb6  
+download:[https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg](https://dl.google.com/release2/chrome/jvsmwdj44b2dzm5rgai3s347ym_123.0.6312.107/GoogleChrome-123.0.6312.107.dmg)  
 
 ## mac canary
-version:125.0.6397.0  
-size:201623805  
-sha1:59cf4d69a0e2ca70f1936cdb45b64324efea1355  
-sha256:197fadbb6386b1895f855e88eb7d2700e7f17a1f63ecde5327fde35b3ba67df7  
-download:[https://dl.google.com/release2/chrome/h6bfzpzdc57kv743pmc43volpa_125.0.6397.0/GoogleChromeCanary-125.0.6397.0.dmg](https://dl.google.com/release2/chrome/h6bfzpzdc57kv743pmc43volpa_125.0.6397.0/GoogleChromeCanary-125.0.6397.0.dmg)  
+version:125.0.6399.0  
+size:201219038  
+sha1:a2a34b52a0fee42807dd1b35fb2ccf8fdd7848e1  
+sha256:c53185a86dbf09ca3775fc854134b74cb9abbc00fa61d338d8645f643e867455  
+download:[https://dl.google.com/release2/chrome/cm2hptjswib3hjjpj6u4jh5stm_125.0.6399.0/GoogleChromeCanary-125.0.6399.0.dmg](https://dl.google.com/release2/chrome/cm2hptjswib3hjjpj6u4jh5stm_125.0.6399.0/GoogleChromeCanary-125.0.6399.0.dmg)  
 
